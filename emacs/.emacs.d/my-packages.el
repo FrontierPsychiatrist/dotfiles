@@ -7,7 +7,7 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(defvar my-packages '(org company elm-mode seti-theme magit helm))
+(defvar my-packages '(org company elm-mode seti-theme magit helm ensime evil))
 
 (dolist (package my-packages)
   (unless (package-installed-p package)
