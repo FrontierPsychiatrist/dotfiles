@@ -14,3 +14,7 @@
 (load "~/.emacs.d/agenda-files.el")
 
 (add-hook 'elm-mode-hook #'elm-oracle-setup-completion)
+
+(require 'helm-config)
+; bind the normal M-x to helm
+(global-set-key (kbd "M-x") 'helm-M-x)
