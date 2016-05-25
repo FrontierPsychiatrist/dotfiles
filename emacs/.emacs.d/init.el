@@ -1,6 +1,8 @@
 (load "~/.emacs.d/my-packages.el")
 
 (add-hook 'after-init-hook 'global-company-mode)
+; Make company completions respect case
+(setq company-dabbrev-downcase nil)
 
 (load-theme 'seti t)
 
