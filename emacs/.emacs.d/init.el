@@ -18,3 +18,5 @@
 (require 'helm-config)
 ; bind the normal M-x to helm
 (global-set-key (kbd "M-x") 'helm-M-x)
+
+(require 'evil)
