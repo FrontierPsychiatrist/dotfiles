@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Name=Emacs 25 client
+GenericName=Text Editor
+Comment=View and edit files
+MimeType=text/english;text/plain/text/x-makefile;text/x-c++hdr;text-c++src
+Exec=/usr/bin/emacsclient --create-frame --alternate-editor "" %F
+Icon=/usr/share/icons/hicolor/scalable/apps/emacs25.svg
+Type=Application
+Terminal=false
+Categories=Utility;Development;TextEditor
+StartupWMClass=Emacs
