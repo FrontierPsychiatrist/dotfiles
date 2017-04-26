@@ -13,6 +13,13 @@ stow emacs
 
 This will create symlinks for emacs config files in the home directory.
 
+# Notes
+## Emacs systemd daemon
+After running `stow systemd` the service has to be enabled with
+```sh
+systemctl enable --user emacs.service
+```
+
 # Links
 Idea from a [blog post by Brandon Invergo](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
 
