@@ -20,6 +20,15 @@ After running `stow systemd` the service has to be enabled with
 systemctl enable --user emacs.service
 ```
 
+## Emacs desktop entry
+
+Instead of installing the desktopt entry with stow, better use `desktop-file-install`:
+
+```sh
+cd ~/.local/share/applications
+desktop-file-install --dir=. ~/.dotfiles/applications/.local/share/applications/emacsclient.desktop
+```
+
 # Links
 Idea from a [blog post by Brandon Invergo](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
 
