@@ -2,12 +2,12 @@
 
 [Desktop Entry]
 Version=1.0
-Name=Emacs 25 client
+Name=Emacs Client
 GenericName=Text Editor
 Comment=View and edit files
-Exec=/usr/bin/emacsclient --create-frame --alternate-editor "" %F
 MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/c++src
-Icon=/usr/share/icons/hicolor/scalable/apps/emacs25.svg
+Exec=/usr/local/bin/emacsclient --create-frame %F
+Icon=/usr/local/share/icons/hicolor/scalable/apps/emacs.svg
 Type=Application
 Terminal=false
 Categories=Utility;Development;TextEditor
