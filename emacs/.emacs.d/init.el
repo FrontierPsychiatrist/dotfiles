@@ -54,10 +54,6 @@
   :config
   (setq js-indent-level 2))
 
-; Typescript compilation & completion support
-(use-package tide
-  :ensure t)
-
 (use-package company
   :ensure t
   :config
@@ -74,6 +70,9 @@
   :ensure t
   :config
   (global-set-key [f8] 'neotree-toggle))
+
+(use-package yaml-mode
+  :ensure t)
 
 ; PATH env variable needed by elm-mode to find elm-make and node
 (setenv "PATH" (concat (getenv "PATH") ":/home/moritz/.npm-packages/bin:/home/moritz/bin"))
@@ -131,7 +130,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(git-gutter neotree evil tide helm company doom-themes projectile magit use-package)))
+   '(yaml-mode git-gutter neotree evil helm company doom-themes projectile magit use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
