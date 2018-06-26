@@ -81,6 +81,9 @@
 ; Don't generate tabs for indentation
 (setq-default indent-tabs-mode nil)
 
+; Delete trailing whitespace before saving any file
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ; Make company completions respect case
 ;(setq company-dabbrev-downcase nil)
 
