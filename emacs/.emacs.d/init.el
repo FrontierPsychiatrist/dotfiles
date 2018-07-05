@@ -74,6 +74,11 @@
 (use-package yaml-mode
   :ensure t)
 
+(use-package js2-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)))
+
 ; PATH env variable needed by elm-mode to find elm-make and node
 (setenv "PATH" (concat (getenv "PATH") ":/home/moritz/.npm-packages/bin:/home/moritz/bin"))
 (setq exec-path (append exec-path  '("/home/moritz/bin" "/home/moritz/.npm-packages/bin")))
@@ -133,7 +138,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(yaml-mode git-gutter neotree evil helm company doom-themes projectile magit use-package)))
+   '(js2-mode yaml-mode git-gutter neotree evil helm company doom-themes projectile magit use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
